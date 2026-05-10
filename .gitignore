@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+flight_tracking/.env
+flight_tracking/checkpoints/*
+!flight_tracking/checkpoints/.gitkeep
+flight_tracking/output/
+.streamlit/secrets.toml
