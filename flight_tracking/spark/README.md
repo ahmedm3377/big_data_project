@@ -34,7 +34,7 @@ Run latest aircraft detail output:
 docker exec flight-spark-master /opt/spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5 /workspace/flight_tracking/spark/flight_streaming_job.py --mode latest-aircraft --trigger-once --bootstrap-servers kafka:29092 --checkpoint-dir /tmp/flight_tracking/checkpoints/latest_aircraft --output-path /workspace/flight_tracking/output
 ```
 
-Upload the static country metadata CSV to HDFS for the Spark SQL join:
+Upload the static country metadata CSV to HDFS for the Spark SQL bonus join:
 
 ```powershell
 docker exec flight-hdfs-namenode hdfs dfs -mkdir -p /flight_tracking/static
